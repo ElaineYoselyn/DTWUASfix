@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Assets/image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Assets/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Assets/image/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <title>Sound Argument</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/reviewpages.css">
+    <link rel="javascript" type="javascript" href="../assets/js/script.js">
+
+    <style>
+      .transition-main {
+        transition-property: opacity, transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        transform: translateX(0);
+        opacity: 1;
+      }
+      
+      html.is-animating .transition-main {
+        opacity: 0;
+        transform: translateX(-1em);
+      }
+      
+      html.is-leaving .transition-main {
+        transform: translateX(1em);
+      }
+      
+      
+      html.is-animating.to-left .transition-main {
+        opacity: 0;
+        transform: translateX(1em);
+      }
+      
+      html.is-leaving.to-left .transition-main {
+        transform: translateX(-1em);
+      }
+    </style>
+  </head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg fixed-top shadow-lg" style="background-color:#f3f4f6;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="../assets/img/android-chrome-192x192.png" alt="Logosoar" width="40" height="34" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <div class="menuhover" style="color: black;">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                Catalogue & Reviews
+              </a>
+            </div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Headphone</a></li>
+              <li><a class="dropdown-item" href="#">Earphone</a></li>
+              <li><a class="dropdown-item" href="#">Cables & Accessory</a></li>
+              <li><a class="dropdown-item" href="#">Amplifier</a></li>
+              <li><a class="dropdown-item" href="#">Music Player</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Profile</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  
+<div class="container-fluid productnavbar">
+  <h1 style="font-size:80px">Audio Reviews.</h1>
+    <nav id="audiomenu">
+      <a class="hover-2" data-swup-transition="left" href="headphonepage.html">Headphone</a>
+      <a class="hover-2" data-swup-transition="left" href="earphonepage.html">Earphones</a>
+      <a class="hover-2" data-swup-transition="left" href="speakerpage.html">Speakers</a>
+      <a class="hover-2" data-swup-transition="left" href="amplifierpage.html">Amplifier</a>
+      <a class="hover-2" data-swup-transition="left" href="musicplayerpage.html">Music Player</a>
+    </nav>
+</div>
+
+<main id="swup" class="transition-main">
+    <div class="container-fluid reviewgrid pb-5">
+      <div class="row gap-5 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3 border 5 shadow rounded img-hover img-shadow-1 reviewtile">
+          <a href="#">
+            <img src="../assets/img/hd-200.png" alt="senheisser">
+            <div class="text"> Senheisser HD 200</div>
+            <div class="subtext">William Evan Bunaidy</div>
+            <div class="subtext">December 3, 2023</div>
+          </a>
+        </div>
+        <div class="ol-12 col-md-6 col-lg-3 border 5 shadow rounded img-hover img-shadow-1 reviewtile">
+          <a href="#">
+            <img src="../assets/img/hd-600s.png" alt="senheisser">
+            <div class="text"> Senheisser HD 660s</div>
+            <div class="subtext">William Evan Bunaidy</div>
+            <div class="subtext">December 3, 2023</div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile">
+          <a href="#"> 
+            <img src="../assets/img/hesh-evo.jpg" alt="Skull Candy">
+            <div class="text">Hesh-Evo Wireless</div>
+            <div class="subtext">William Evan Bunaidy</div>
+            <div class="subtext">December 3, 2023</div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile">
+          <a href="#"> 
+            <img src="../assets/img/ATH-550Z.jpg" alt="Audio Technica">
+            <div class="text"> ATH-A550Z </div>
+            <div class="subtext">William Evan Bunaidy</div>
+            <div class="subtext">December 3, 2023</div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile">
+          <a href="#"> 
+            <img src="../assets/img/moondrop-joker.jpg" alt="Moondrop">
+            <div class="text"> Senheisser HD 660s</div>
+            <div class="subtext">William Evan Bunaidy</div>
+            <div class="subtext">December 3, 2023</div>
+          </a>
+        </div>        
+      </div>
+    </div>
+  </main>
+
+<script type="module">
+  import Swup from 'https://unpkg.com/swup@3?module';
+  const swup = new Swup({
+    containers: ["#swup"]
+  });
+</script>
+  </body>
+</html>
