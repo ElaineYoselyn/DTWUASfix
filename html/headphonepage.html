@@ -11,7 +11,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/reviewsection.css">
-    <link rel="javascript" type="javascript" href="../assets/js/script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
 
     <style>
       .transition-main {
@@ -42,8 +46,10 @@
       }
     </style>
   </head>
-<body>
   
+<body>
+
+ <header> 
   <nav class="navbar navbar-expand-lg fixed-top shadow-lg" style="background-color:#f3f4f6;">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -86,9 +92,59 @@
       </div>
     </div>
   </nav>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-  
+</header>
+
+<section class="game-section">
+  <h2 class="line-title">Recommended hears</h2>
+  <div class="owl-carousel custom-carousel owl-theme">
+    <div class="item active" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg);">
+      <div class="item-desc">
+        <h3>Dota 2</h3>
+        <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+          Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg);">
+      <div class="item-desc">
+        <h3>The Witcher 3</h3>
+        <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
+          of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/rdr-2.jpg);">
+      <div class="item-desc">
+        <h3>RDR 2</h3>
+        <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+          Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg);">
+      <div class="item-desc">
+        <h3>PUBG Mobile</h3>
+        <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+          Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg);">
+      <div class="item-desc">
+        <h3>Fortnite</h3>
+        <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
+          for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg);">
+      <div class="item-desc">
+        <h3>Far Cry 5</h3>
+        <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
+          which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+ 
+
+<Section class="review-body">
 <div class="container-fluid productnavbar">
   <h1 style="font-size:80px">Audio Reviews.</h1>
     <nav id="audiomenu">
@@ -146,6 +202,9 @@
       </div>
     </div>
   </main>
+</Section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script type="module">
   import Swup from 'https://unpkg.com/swup@3?module';
@@ -153,5 +212,7 @@
     containers: ["#swup"]
   });
 </script>
+
+<script type="text/javascript" src="../assets/js/script.js"></script>
   </body>
 </html>
