@@ -45,7 +45,7 @@
         transform: translateX(-1em);
       }
     </style>
-  </head>
+</head>
   
 <body>
 
@@ -94,17 +94,23 @@
   </nav>
 </header>
 
-<section class="game-section">
+<Section class="title hidden">
+<h1 style="font-size:80px; padding-top: 50px">Audio Reviews.</h1>
+</Section>
+
+
+<section class="game-section hidden">
   <h2 class="line-title">Recommended hears</h2>
   <div class="owl-carousel custom-carousel owl-theme">
-    <div class="item active" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg);">
+    <div class="item active" style="background-image: url(../assets/img/aria-2.jpg);">
       <div class="item-desc">
-        <h3>Dota 2</h3>
-        <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-          Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        <h3>Moondrop Aria 2</h3>
+        <p>Immerse yourself in a world of audio precision with the Moondrop Aria 2. These in-ear monitors are crafted to deliver a captivating listening experience, 
+          combining advanced technology with sleek design. 
+        </p>
       </div>
     </div>
-    <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg);">
+    <div class="item" style="background-image: url(../assets/img/hd-600s.png);">
       <div class="item-desc">
         <h3>The Witcher 3</h3>
         <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
@@ -142,24 +148,25 @@
   </div>
   </div>
 </section>
- 
+
+
+<section class="second-navbar hidden">
+  <div class="container-fluid productnavbar">
+      <nav id="audiomenu">
+        <a class="hover-2 hidden" data-swup-transition="left" href="headphonepage.html">Headphone</a>
+        <a class="hover-2 hidden" data-swup-transition="left" href="earphonepage.html">Earphones</a>
+        <a class="hover-2 hidden" data-swup-transition="left" href="speakerpage.html">Speakers</a>
+        <a class="hover-2 hidden" data-swup-transition="left" href="amplifierpage.html">Amplifier</a>
+        <a class="hover-2 hidden" data-swup-transition="left" href="musicplayerpage.html">Music Player</a>
+      </nav>
+  </div>
+  </section>
 
 <Section class="review-body">
-<div class="container-fluid productnavbar">
-  <h1 style="font-size:80px">Audio Reviews.</h1>
-    <nav id="audiomenu">
-      <a class="hover-2" data-swup-transition="left" href="headphonepage.html">Headphone</a>
-      <a class="hover-2" data-swup-transition="left" href="earphonepage.html">Earphones</a>
-      <a class="hover-2" data-swup-transition="left" href="speakerpage.html">Speakers</a>
-      <a class="hover-2" data-swup-transition="left" href="amplifierpage.html">Amplifier</a>
-      <a class="hover-2" data-swup-transition="left" href="musicplayerpage.html">Music Player</a>
-    </nav>
-</div>
-
 <main id="swup" class="transition-main">
-    <div class="container-fluid reviewgrid pb-5">
-      <div class="row gap-5 justify-content-center">
-        <div class="col-12 col-md-6 col-lg-3 border 5 shadow rounded img-hover img-shadow-1 reviewtile">
+    <div class="container-fluid reviewgrid pb-5 hidden">
+      <div class="row gap-5 justify-content-center hidden">
+        <div class="col-12 col-md-6 col-lg-3 border 5 shadow rounded img-hover img-shadow-1 reviewtile hidden">
           <a href="#">
             <img src="../assets/img/hd-200.png" alt="senheisser">
             <div class="text"> Senheisser HD 200</div>
@@ -167,7 +174,7 @@
             <div class="subtext">December 3, 2023</div>
           </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 border 5 shadow rounded img-hover img-shadow-1 reviewtile">
+        <div class="col-12 col-md-6 col-lg-3 border 5 shadow rounded img-hover img-shadow-1 reviewtile hidden">
           <a href="#">
             <img src="../assets/img/hd-600s.png" alt="senheisser">
             <div class="text"> Senheisser HD 660s</div>
@@ -175,7 +182,7 @@
             <div class="subtext">December 3, 2023</div>
           </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile">
+        <div class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile hidden">
           <a href="#"> 
             <img src="../assets/img/hesh-evo.jpg" alt="Skull Candy">
             <div class="text">Hesh-Evo Wireless</div>
@@ -183,7 +190,7 @@
             <div class="subtext">December 3, 2023</div>
           </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile">
+        <div class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile hidden">
           <a href="#"> 
             <img src="../assets/img/ATH-550Z.jpg" alt="Audio Technica">
             <div class="text"> ATH-A550Z </div>
@@ -191,7 +198,7 @@
             <div class="subtext">December 3, 2023</div>
           </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile">
+        <div class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile hidden">
           <a href="#"> 
             <img src="../assets/img/moondrop-joker.jpg" alt="Moondrop">
             <div class="text"> Senheisser HD 660s</div>
@@ -203,6 +210,8 @@
     </div>
   </main>
 </Section>
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 

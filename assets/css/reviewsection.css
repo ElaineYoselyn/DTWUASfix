@@ -3,6 +3,73 @@
     src: url(../css/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.title{
+  margin-top:3%;
+  text-align:center;
+  font-family: montserrat;
+  font-weight: 600;
+}
+
+/* Secondary Navbar */ 
+
+#audiomenu{
+  position: relative;
+  padding-top: 50px;  
+  right: 0;
+  left: 0;
+  width: 319px;
+  display: table;
+  margin: 0 auto;
+  transform: translateY(-50%);
+
+}
+
+#audiomenu a{
+  position: relative;
+  width: 33.333%;
+  display: table-cell;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: montserrat;
+  font-weight: 200px;
+  padding: 10px 20px;
+  white-space: nowrap;  
+}
+
+.hover-2 { 
+  &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      transform: scaleX(0);
+      background-color: black;
+
+      transition: transform 0.3s;
+  }
+
+  &:hover {
+      &:after {
+          transform: scaleX(1);    
+      }
+  }
+}
+
+#audiomenu a:hover {
+  color: black;
+}
+
+
+
 /* Carousel */
 
 /******* Fonts Import Start **********/
@@ -10,6 +77,7 @@
 /********* Fonts Face CSS End **********/
 
 /******* Common Element CSS Start ******/
+
 
 .review-section-carousel{
   padding-top: 30px;
@@ -161,7 +229,6 @@ a:hover {
   transform: translateY(0);
 }
 .game-section .owl-theme.custom-carousel .owl-dots {
- margin-bottom: -90px;
   position: relative;
   z-index: 5;
 }
@@ -265,70 +332,15 @@ a:hover {
   }
 }
 
+  /* Review Grid */
 
-
-/* Secondary Navbar */
-
-#audiomenu{
-    position: relative;
-    padding-top: 50px;
-    right: 0;
-    left: 0;
-    width: 319px;
-    display: table;
-    margin: 0 auto;
-    transform: translateY(-50%);
-  
-  }
-  
-#audiomenu a{
-    position: relative;
-    width: 33.333%;
-    display: table-cell;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: montserrat;
-    font-weight: 200px;
-    padding: 10px 20px;
-    white-space: nowrap;  
-  }
-  
-.hover-2 { 
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 1px;
-        transform: scaleX(0);
-        background-color: black;
-  
-        transition: transform 0.3s;
-    }
-  
-    &:hover {
-        &:after {
-            transform: scaleX(1);    
-        }
-    }
-  }
-  
-  #audiomenu a:hover {
-    color: black;
-  }
-  
-  
   .col{
     height: fit-content;
     width: fit-content;
   }
   
   .reviewgrid{
- 
+  
     margin-top:-10px;
     text-align:center; 
     width: 65vw;
@@ -350,7 +362,7 @@ a:hover {
     height: 300px;
     width: 300px;
   }
-
+  
   .reviewtile img{
     position: absolute;
     display: block;
@@ -375,7 +387,7 @@ a:hover {
     text-align: center;
     transition: opacity 1s;
   }
-
+  
   .reviewtile:hover .subtext{
     color: black;
     opacity: 1;
@@ -395,7 +407,7 @@ a:hover {
     font-size: 22px;
     font-family: montserrat;
   }
-
+  
   .subtext{
     opacity: 0;
     transition: opacity 0.8s;
@@ -409,19 +421,6 @@ a:hover {
     font-family: montserrat;
     margin-top: -100px;
   }
-
-  /* Review Grid */
-  
-  .productnavbar{
-    margin-top:100px; 
-    text-align:center
-  }
-
-  .productnavbar h1{
-    font-family: montserrat;
-    font-weight: 600;
-  }
-
   
   .img-shadow-1
   {
@@ -480,4 +479,19 @@ a:hover {
   .image-hover a {text-decoration:none}
   
   .image-hover img {margin:-100px 0px 0px -100px}
+
+/*!Animations*/
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 0.8s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 0.8s;  
+}
 

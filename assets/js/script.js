@@ -8,7 +8,9 @@ $('.navTrigger').click(function () {
 
 $(".custom-carousel").owlCarousel({
     autoWidth: true,
-    loop: true
+    autoplay:true,
+    loop: true,
+    center: true,
   });
   $(document).ready(function () {
     $(".custom-carousel .item").click(function () {
@@ -17,3 +19,14 @@ $(".custom-carousel").owlCarousel({
     });
   });
   
+  const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) =>{
+      console.log(entry)
+      if (entry.isIntersecting){
+        entry.target.classList.add("show");
+      }
+    } );
+  } );
+
+  const hiddenElements = document.querySelectorAll(".hidden");
+  hiddenElements.forEach((el) =>observer.observe(el));
