@@ -73,3 +73,36 @@ Scroller.prototype = {
 
 var scroller = new Scroller();  
 scroller.init();
+
+// Main body
+
+const player_1 = document.getElementById('Lottie_2');
+
+player_1.addEventListener('ready', () => {
+  LottieInteractivity.create({
+  player: player_1.getLottie(),
+  mode:"cursor",
+    actions: [
+        {
+            type: "click",
+            forceFlag: false,
+        }
+    ]
+    });
+});
+
+const player_2 = document.getElementById('Lottie_3');
+
+player_2.addEventListener('ready', () => {
+  LottieInteractivity.create({
+  player: player_2.getLottie(),
+  mode:"scroll",
+    actions: [
+        {
+        visibility: [0,1],
+        type: 'seek',
+        frames: [0, 90],
+        }
+    ]
+    });
+});

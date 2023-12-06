@@ -8,9 +8,14 @@ $('.navTrigger').click(function () {
 
 $(".custom-carousel").owlCarousel({
     autoWidth: true,
+    loop: false,
     autoplay:true,
-    loop: true,
-    center: true,
+    autoWidth: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 5000,
+    autoplaySpeed: 1000,
+    dots: false,
+    rewind: true,
   });
   $(document).ready(function () {
     $(".custom-carousel .item").click(function () {
@@ -30,3 +35,5 @@ $(".custom-carousel").owlCarousel({
 
   const hiddenElements = document.querySelectorAll(".hidden");
   hiddenElements.forEach((el) =>observer.observe(el));
+
+ 
