@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="../../assets/img/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="../../assets/img/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="../../assets/img/favicon-16x16.png"
+  />
+
+  <title>Sound Argument</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/review-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .transition-main {
+        transition-property: opacity, transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      html.is-animating .transition-main {
+        opacity: 0;
+        transform: translateX(-1em);
+      }
+
+      html.is-leaving .transition-main {
+        transform: translateX(1em);
+      }
+
+      html.is-animating.to-left .transition-main {
+        opacity: 0;
+        transform: translateX(1em);
+      }
+
+      html.is-leaving.to-left .transition-main {
+        transform: translateX(-1em);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg fixed-top shadow-lg"
+        style="background-color: #f3f4f6"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="../assets/img/android-chrome-192x192.png"
+              alt="Logosoar"
+              width="40"
+              height="34"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <div class="menuhover" style="color: black">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="color: black"
+                  >
+                    Catalogue & Reviews
+                  </a>
+                </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Headphone</a></li>
+                  <li><a class="dropdown-item" href="#">Earphone</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cables & Accessory</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Amplifier</a></li>
+                  <li><a class="dropdown-item" href="#">Music Player</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Profile</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="recommended-section hidden">
+      <div class="container-fluid container-carousel justify-content-center">
+        <h2 class="line-title">Recommended by Us</h2>
+        <div class="owl-carousel custom-carousel owl-theme">
+          <div
+            class="item active"
+            style="
+              background-image: url(../../assets/img/categories/earphones/aria-2.png);
+            "
+          >
+            <div class="item-desc">
+              <h3>Moondrop Aria 2</h3>
+              <p>
+                Immerse yourself in a world of audio precision with the Moondrop
+                Aria 2. These in-ear monitors are crafted to deliver a
+                captivating listening experience, combining advanced technology
+                with sleek design.
+              </p>
+              <a href="../reviews/moondrop-aria2.html">Read More</a>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="
+              background-image: url(../../assets/img/categories/headphones/hd-600s.png);
+            "
+          >
+            <div class="item-desc">
+              <h3>Senheisser HD-600s</h3>
+              <p>
+                The Sennheiser HD600s is a classic open-back dynamic headphone
+                renowned for its exceptional audio clarity and natural sound
+                reproduction. With advanced neodymium magnets and lightweight
+                aluminum voice coils, these headphones deliver a balanced and
+                nuanced audio experience.
+              </p>
+              <a href="../reviews/senheisserhd600s.html">Read More</a>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="
+              background-image: url(../../assets/img/categories/headphones/ATH-A550Z.png);
+            "
+          >
+            <div class="item-desc">
+              <h3>ATH A550Z</h3>
+              <p>
+                The Audio-Technica ATH-A550Z is a professional-grade closed-back
+                headphone that stands out for its exceptional sound clarity and
+                versatility. Equipped with proprietary 45mm large-aperture
+                drivers, these headphones deliver accurate audio across a broad
+                frequency range.
+              </p>
+              <a href="../reviews/ath-a550z.html">Read More</a>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="
+              background-image: url(../../assets/img/categories/speakers/Harman-Kardan-Luna-transformed.png);
+            "
+          >
+            <div class="item-desc">
+              <h3>Harman Kardan Luna</h3>
+              <p>
+                The Harman Kardon Luna is a stylish and powerful wireless
+                speaker system designed to elevate your audio experience. With a
+                sleek and modern circular design, the Luna seamlessly blends
+                aesthetics with high-quality sound.
+              </p>
+              <a href="../reviews/harmankardon-luna.html">Read More</a>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="
+              background-image: url(../../assets/img/categories/earphones/moondrop-chu.png);
+            "
+          >
+            <div class="item-desc">
+              <h3>Moondrop Chu</h3>
+              <p>
+                The Moondrop Chu is an in-ear monitor (IEM) that captivates
+                audio enthusiasts with its precision and clarity. Crafted with
+                meticulous attention to detail, the Chu features high-quality
+                dynamic drivers that deliver a balanced and natural sound
+                signature.
+              </p>
+              <a href="../reviews/moondrop-chu.html">Read More</a>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="
+              background-image: url(../../assets/img/categories/earphones/tanchjim-zero-transformed.png);
+            "
+          >
+            <div class="item-desc">
+              <h3>Tanchjim Zero</h3>
+              <p>
+                The Tanchjim Zero is an in-ear monitor (IEM) that captivates
+                audio enthusiasts with its exceptional audio performance.
+                Boasting a hybrid driver configuration, combining both dynamic
+                and balanced armature drivers, the Tanchjim Zero delivers a
+                balanced and nuanced sound signature.
+              </p>
+              <a href="../reviews/tanchjim-zero.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider hidden"></div>
+
+    <section class="second-navbar hidden">
+      <div class="container productnavbar">
+        <div class="menu-toggle">
+          <svg
+            class="ham hamRotate ham4"
+            viewBox="0 0 100 100"
+            width="80"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+            />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+            />
+          </svg>
+        </div>
+        <nav id="audiomenu">
+          <a
+            class="hover-2 hidden"
+            data-swup-transition="left"
+            href="headphone.html"
+            >Headphone</a
+          >
+          <a
+            class="hover-2 hidden"
+            data-swup-transition="left"
+            href="earphone.html"
+            >Earphones</a
+          >
+          <a
+            class="hover-2 hidden"
+            data-swup-transition="left"
+            href="speaker.html"
+            >Speakers</a
+          >
+          <a
+            class="hover-2 hidden"
+            data-swup-transition="left"
+            href="amplifier.html"
+            >Amplifier</a
+          >
+          <a
+            class="hover-2 hidden"
+            data-swup-transition="left"
+            href="musicplayer.html"
+            >Music Player</a
+          >
+        </nav>
+      </div>
+    </section>
+
+    <section class="review-body hidden">
+      <main id="swup" class="transition-main">
+        <div class="container reviewgrid pb-5">
+          <div class="row gap-5 justify-content-center">
+            <div
+              class="col-12 col-md-6 col-lg-3 border 5 shadow rounded img-hover img-shadow-1 reviewtile"
+            >
+              <a href="../reviews/audiolab-6000a.html">
+                <img
+                  src="../../assets/img/categories/amplifiers/audiolab-6000a.png"
+                  alt="Audiolab"
+                />
+                <div class="text">Audiolab-6000a</div>
+                <div class="subtext">William Evan Bunaidy</div>
+                <div class="subtext">December 3, 2023</div>
+              </a>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 border 5 shadow rounded img-hover img-shadow-1 reviewtile"
+            >
+              <a href="../reviews/fosi-audiobt20a.html">
+                <img
+                  src="../../assets/img/categories/amplifiers/fosi-bt20a.png"
+                  alt="Fosi"
+                />
+                <div class="text">Fosi-BT20A</div>
+                <div class="subtext">William Evan Bunaidy</div>
+                <div class="subtext">December 3, 2023</div>
+              </a>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile"
+            >
+              <a href="../reviews/ifi-diabloidsd.html">
+                <img
+                  src="../../assets/img/categories/amplifiers/iDSD-diablo-transformed.png"
+                  alt="Diablo"
+                />
+                <div class="text">iDSD-diablo</div>
+                <div class="subtext">William Evan Bunaidy</div>
+                <div class="subtext">December 3, 2023</div>
+              </a>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile"
+            >
+              <a href="../reviews/pyle-PT272AUBT6.html">
+                <img
+                  src="../../assets/img/categories/amplifiers/pyle-6-transformed.png"
+                  alt="Pyle"
+                />
+                <div class="text">Pyle 6 Wireless Bluetooth</div>
+                <div class="subtext">William Evan Bunaidy</div>
+                <div class="subtext">December 3, 2023</div>
+              </a>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 border 5 shadow rounded img-hover img-shadow-1 reviewtile"
+            >
+              <a href="../reviews/marantz-pm6007.html">
+                <img
+                  src="../../assets/img/categories/amplifiers/Marantz-PM6007.webp"
+                  alt="Marantz"
+                />
+                <div class="text">Marantz PM6007</div>
+                <div class="subtext">William Evan Bunaidy</div>
+                <div class="subtext">December 3, 2023</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module">
+      import Swup from "https://unpkg.com/swup@3?module";
+      const swup = new Swup({
+        containers: ["#swup"],
+      });
+    </script>
+
+    <script src="../../assets/js/review-section.js"></script>
+  </body>
+</html>
