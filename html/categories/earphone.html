@@ -50,6 +50,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <link rel="javascript" type="javascript" href="../../assets/js/script.js">
+
     <style>
       .transition-main {
         transition-property: opacity, transform;
@@ -81,81 +84,30 @@
 
   <body>
     <header>
-      <nav
-        class="navbar navbar-expand-lg fixed-top shadow-lg"
-        style="background-color: #f3f4f6"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="../assets/img/android-chrome-192x192.png"
-              alt="Logosoar"
-              width="40"
-              height="34"
-              class="d-inline-block align-text-top"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item dropdown">
-                <div class="menuhover" style="color: black">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    style="color: black"
-                  >
-                    Catalogue & Reviews
-                  </a>
-                </div>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Headphone</a></li>
-                  <li><a class="dropdown-item" href="#">Earphone</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Cables & Accessory</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Amplifier</a></li>
-                  <li><a class="dropdown-item" href="#">Music Player</a></li>
+      <nav class="nav" style="background-color: black; height: 65px;; padding-top: 0%;">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html"> 
+                    <img src="../../assets/img/Header & Nav/white ver.png" alt="Logosoar" width="60" height="50" style="padding-bottom: 4px;">
+                </a>
+    
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="../../html/categories/headphone.html">Reviews</a></li>
+                    <li><a href="../../html/about us/aboutus.html">About Us</a></li>
+                    <li><a href="#">News</a></li>
+    
                 </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Profile</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
+                <span class="navTrigger" style="margin-top:22px;">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+              </span>
+            </div>
+    
         </div>
-      </nav>
+    </nav>
     </header>
 
     <section class="recommended-section hidden">
@@ -402,6 +354,81 @@
         </div>
       </main>
     </section>
+
+        <!-- Footer -->
+<footer class="footer-section">
+  <div class="container">
+
+      <div class="footer-content pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          <a href="index.html"><img src="../../assets/img/Header & Nav/white ver.png" class="img-fluid" style="height: 8rem; width: 12rem;" alt="logo"></a>
+                      </div>
+                      <div class="footer-text">
+                          <p> Sound argument, we are always here to help you find the best music experiance, come and enjoy music with us and spread your wings!</p>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Support</h3>
+                      </div>
+                      <ul style="font-size: small;">
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Security & Privacy</a></li>
+                          <li><a href="#">Terms & Condition</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">Latest News</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Follow Us</h3>
+                      </div>
+                      <div class="footer-social-icon" style="padding-left: 2px;">
+                        <a href="mailto: elaine.yoselyn2005@gmail.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/emailicon.svg" style="width: 5%;" class="icon"> Gmail  </div></a>
+                        <a href="www.instagram.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/instagramicon.svg" style="width: 5%;"class="icon"> Instagram  </div></a>
+                        <a href="www.twitter.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/twittericon.svg" style="width: 5%;"class="icon"> Twitter  </div></a>
+                    </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+  <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-12 col-lg-12 text-center">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2022, All Right Reserved <a href="#">Sound Argument.co</a></p>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../assets/js/script.js"></script>
+<script>
+  $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+          $('.nav').addClass('affix');
+          console.log("OK");
+      } else {
+          $('.nav').removeClass('affix');
+      }
+  });
+</script>
+
 
     <script
       type="text/javascript"

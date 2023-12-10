@@ -34,6 +34,10 @@
       href="../../assets/css/reviewpage.css"
     />
 
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <link rel="javascript" type="javascript" href="../../assets/js/script.js">
+
+
     <style>
       .chart {
         top: 40px;
@@ -85,6 +89,33 @@
   </head>
 
   <body>
+
+    <header>
+      <nav class="nav" style="background-color: black; height: 65px;; padding-top: 0%;">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html"> 
+                    <img src="../../assets/img/Header & Nav/white ver.png" alt="Logosoar" width="60" height="50" style="padding-bottom: 4px;">
+                </a>
+    
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="../../html/categories/headphone.html">Reviews</a></li>
+                    <li><a href="../../html/about us/aboutus.html">About Us</a></li>
+                    <li><a href="#">News</a></li>
+    
+                </ul>
+                <span class="navTrigger" style="margin-top:22px;">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+              </span>
+            </div>
+        </div>
+    </nav>
+  </header>
+
     <section class="headphone-header">
       <main class="container">
         <div class="left-column hidden">
@@ -258,6 +289,79 @@
         >
       </div>
     </section>
+
+    <footer class="footer-section">
+      <div class="container">
+    
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                              <a href="index.html"><img src="../../assets/img/Header & Nav/white ver.png" class="img-fluid" style="height: 8rem; width: 12rem;" alt="logo"></a>
+                          </div>
+                          <div class="footer-text">
+                              <p> Sound argument, we are always here to help you find the best music experiance, come and enjoy music with us and spread your wings!</p>
+                          </div>
+    
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Support</h3>
+                          </div>
+                          <ul style="font-size: small;">
+                              <li><a href="#">About us</a></li>
+                              <li><a href="#">Security & Privacy</a></li>
+                              <li><a href="#">Terms & Condition</a></li>
+                              <li><a href="#">Contact Us</a></li>
+                              <li><a href="#">Latest News</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Follow Us</h3>
+                          </div>
+                          <div class="footer-social-icon" style="padding-left: 2px;">
+                            <a href="mailto: elaine.yoselyn2005@gmail.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/emailicon.svg" style="width: 5%;" class="icon"> Gmail  </div></a>
+                            <a href="www.instagram.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/instagramicon.svg" style="width: 5%;"class="icon"> Instagram  </div></a>
+                            <a href="www.twitter.com" style="text-decoration: none; font-size: small;" class="icons-text"><div> <img src="../../assets/img/Header & Nav/twittericon.svg" style="width: 5%;"class="icon"> Twitter  </div></a>
+                        </div>
+                      </div>
+                  </div>
+    
+              </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-12 col-lg-12 text-center">
+                      <div class="copyright-text">
+                          <p>Copyright &copy; 2022, All Right Reserved <a href="#">Sound Argument.co</a></p>
+                      </div>
+                  </div>
+    
+              </div>
+          </div>
+      </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+    </script>
 
     <script
       type="text/javascript"
