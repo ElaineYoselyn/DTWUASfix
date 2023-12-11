@@ -1,7 +1,8 @@
 @font-face {
-  font-family: montserrat !important;
+  font-family: montserrat;
   src: url(../css/fonts/Montserrat-VariableFont_wght.ttf);
 }
+
 html,
 body {
     margin: 0;
@@ -9,6 +10,7 @@ body {
     box-sizing: border-box;
     font-size: 62.5%;
     font-size: 10px;
+    font-family: montserrat;
 
 }
 
@@ -336,8 +338,6 @@ body {
     z-index: 1;
     font-size: 550%;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     animation: fadeIn 5s ease-out forwards;
     text-shadow: 0 0 14px rgba(255, 255, 255, 0.9);
 
@@ -564,6 +564,7 @@ body {
   /*news*/
   .trendingNews{
     padding-top: 5%;
+    
   }
 
   a:hover {
@@ -580,6 +581,7 @@ body {
     border-radius: 6px;
     overflow: hidden;
     z-index: 0;
+    border: solid #e2e2e2 0.2px
   }
   .blog-card a {
     color: inherit;
@@ -710,71 +712,55 @@ body {
   }
   /* footer */
 
-  .footer ul {
-    margin: 0px;
-    padding: 2%;
+.footer ul {
+  margin: 0;
+  padding: 2%;
 }
+
 .footer-section {
   background: #151414;
   position: relative;
+  padding: 30px 0; /* Add padding to create space */
 }
 
 .footer-content {
   position: relative;
   z-index: 2;
 }
+
 .footer-pattern img {
   position: absolute;
   top: 0;
   left: 0;
-  height: 330px;
-  background-size: cover;
-  background-position: 100% 100%;
+  width: 100%; /* Use width instead of height for responsiveness */
+  height: auto;
 }
+
 .footer-logo {
   margin-bottom: 30px;
 }
+
 .footer-logo img {
-    max-width: 98px;
+  max-width: 98px;
 }
+
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #f2f2f2;
+  color: #f2f2f2;
   line-height: 28px;
 }
-.footer-social-icon span {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.footer-social-icon a {
-  color: #fff;
-  font-size: 16px;
-  margin-right: 15px;
-}
-.icon{
-  opacity: 1;
-}
-.icon:hover{
-  opacity: 0.7;
 
-}
-.icons-text{
-  opacity:1;
-}
-.icons-text:hover{
-  color: #b2b2b2;
-}
+.footer-social-icon span,
 .footer-widget-heading h3 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   position: relative;
 }
+
+.footer-social-icon span::before,
 .footer-widget-heading h3::before {
   content: "";
   position: absolute;
@@ -784,38 +770,44 @@ body {
   width: 50px;
   background: #b2b2b2;
 }
+
 .footer-widget ul li {
-  display: inline-block;
-  float: left;
-  width: 50%;
+  display: block; /* Change to block for a cleaner look */
   margin-bottom: 12px;
 }
-.footer-widget ul li a:hover{
-  color: #b2b2b2;
 
+.footer-widget ul li a:hover {
+  color: #b2b2b2;
 }
+
 .footer-widget ul li a {
-  color: #f2f2f2;
+  color: #f2f2f2; 
   text-transform: capitalize;
-  text-decoration:none;
-  margin-left: -30px;
+  text-decoration: none;
 }
-.copyright-area{
+.footer-social-icon a{
+  color: #f2f2f2;
+}
+.footer-social-icon a:hover {
+  color: #b2b2b2;
+}
+
+/* Adjustments for the copyright area */
+.copyright-area {
   background: #202020;
+  padding: 20px 0; /* Add padding for space */
 }
-.copyright-text p {
+
+.copyright-text {
   margin: 0;
   font-size: 14px;
   color: #f2f2f2;
-  text-decoration: none;
   text-align: center;
-  right: 50%; 
-
 }
-.copyright-text p a{
+
+.copyright-text a {
   color: #f2f2f2;
-  text-decoration:none;
- 
+  text-decoration: none;
 }
 
   /*About us*/
@@ -964,6 +956,6 @@ border-radius: 50%;
 .timeline_content span {
 font-size: 18px;
 font-weight: 500;
-font-family: poppins;
+font-family: montserrat;
 color: grey;
 }
