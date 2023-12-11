@@ -450,7 +450,10 @@ section {
       font-weight: bolder;
   }
 
- 
+ #value1{
+  font-size: 2em;
+ }
+
 .bar {
   /* You can modify the total time used for the animation here */
   animation: load 3s normal forwards;
@@ -475,6 +478,7 @@ section {
       width: 95%;
   }
 }
+
 
 
 /*! CSS ANIMATIONS*/
